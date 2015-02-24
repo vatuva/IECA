@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>IECA - HINÁRIO EVANGÉLICO</title>
+
+		
+		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+		<link type="text/css" rel="stylesheet" href="css/addons/jquery.mmenu.dragopen.css" />
+        <link type="text/css" rel="stylesheet" href="css/screen.css" />
+        <link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+        
+		
+		<!-- for the one page layout -->
+		<style type="text/css">
+			#intro,
+			#first,
+			#second,
+			#third
+			{
+				height: 400px;
+			}
+			#intro
+			{
+				padding-top: 0;
+			}
+			#first,
+			#second,
+			#third
+			{
+				border-top: 1px solid ;
+				padding-top: 150px;
+			}
+		</style>
+		
+		<!-- for the fixed header -->
+		<style type="text/css">
+			.header,
+			.footer
+			{
+				box-sizing: border-box;
+				width: 100%;
+				position: fixed;
+			}
+			.header
+			{
+				top: 0;
+			}
+			.footer
+			{
+				bottom: 0;
+			}
+		a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+        h1,h2,h3,h4,h5,h6 {
+	font-family: Arial;
+}
+
+        </style>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>		
+		<script type="text/javascript" src="js/hammer.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+
+		<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+		<script type="text/javascript" src="js/addons/jquery.mmenu.dragopen.min.js"></script>
+		<script type="text/javascript" src="js/addons/jquery.mmenu.fixedelements.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var $menu = $('nav#menu'),
+					$html = $('html, body');
+
+				$menu.mmenu({
+					dragOpen: true
+				});
+
+				$menu.find( 'li > a' ).on(
+					'click',
+					function( e )
+					{
+						var href = $(this).attr( 'href' );
+
+						//	if the clicked link is linked to an anchor, scroll the page to that anchor 
+						if ( href.slice( 0, 1 ) == '#' )
+						{
+							$menu.one(
+								'closed.mm',
+								function()
+								{
+									setTimeout(
+										function()
+										{
+											$html.animate({
+												scrollTop: $( href ).offset().top
+											});	
+										}, 10
+									);	
+								}
+							);
+						}
+					}
+				);
+			});
+		</script>
+</head>
+	<body>
+		<div id="page" data-theme="b">
+			<div class="header FixedTop" data-theme="b">
+				<a href="#menu"></a>
+		  <h3>IECA - HINÁRIO EVANGÉLICO</h3></div>
+			<div data-theme="b"><p></p><p></p>
+            <div data-theme="b"></div>
+            <table width="100%" border="0" align="left">
+  <tr>
+    <th width="25%" align="center" scope="row"><ul data-role="listview"><li><a href="#page4">1</a></li></ul></th>
+    <td width="75%" align="left"><ul data-role="listview">
+      <li><a href="#page4">Título1</a></li></ul></td>
+  </tr>
+  <tr>
+    <th align="center" scope="row"><ul data-role="listview"><li><a href="#page4">2</a></li></ul></th>
+    <td align="left"><ul data-role="listview">
+      <li><a href="#page4">Título2</a></li></ul></td>
+  </tr>
+  <tr>
+    <th align="center" scope="row"><ul data-role="listview"><li><a href="#page4">3</a></li></ul></th>
+    <td align="left"><ul data-role="listview">
+      <li><a href="#page4">Título3</a></li></ul></td>
+  </tr>
+  <tr>
+    <th align="center" scope="row"><ul data-role="listview"><li><a href="#page4">4</a></li></ul></th>
+    <td align="left"><ul data-role="listview">
+      <li><a href="#page4">Título4</a></li></ul></td>
+  </tr>
+  <tr>
+    <th align="center" scope="row"><ul data-role="listview"><li><a href="#page4">5</a></li></ul></th>
+    <td align="left"><ul data-role="listview">
+      <li><a href="#page4">Título5</a></li></ul></td>
+  </tr>
+  <tr>
+    <th align="center" scope="row"><ul data-role="listview"><li><a href="#page4">6</a></li></ul></th>
+    <td align="left"><ul data-role="listview">
+      <li><a href="#page4">Título6</a></li></ul></td>
+  </tr>
+  <tr>
+    <th align="center" scope="row"><ul data-role="listview"><li><a href="#page4">7</a></li></ul></th>
+    <td align="left"><ul data-role="listview">
+      <li><a href="#page4">Título7</a></li></ul></td>
+  </tr>
+  <tr>
+    <th align="center" scope="row"><ul data-role="listview"><li><a href="#page4">8</a></li></ul></th>
+    <td align="left"><ul data-role="listview">
+      <li><a href="#page4">Título8</a></li></ul></td>
+  </tr>
+  <tr>
+    <th align="center" scope="row"><ul data-role="listview"><li><a href="#page4">9</a></li></ul></th>
+    <td align="left"><ul data-role="listview">
+      <li><a href="#page4">Título9</a></li></ul></td>
+  </tr>
+  <tr>
+    <th align="center" scope="row"><ul data-role="listview">
+      <li><a href="#page4">10</a></li></ul></th>
+    <td align="left"><ul data-role="listview">
+      <li><a href="#page4">Título10</a></li></ul></td>
+  </tr>
+  <tr>
+    <th align="center" scope="row">&nbsp;</th>
+    <td align="left">&nbsp;</td>
+  </tr>
+  <tr>
+    <th align="center" scope="row">&nbsp;</th>
+    <td align="left">&nbsp;</td>
+  </tr>
+</table></div>
+			<div class="footer FixedBottom" style="position:fixed; bottom:0px">
+				Fixed footer :-)
+			</div>
+			<nav id="menu">
+				<ul>
+					<li><a href="#content">HOME</a></li>
+					<li><a href="pag2.html">SECÇÕES</a></li>
+					<li><a href="#second">Second section</a></li>
+					<li><a href="#third">Third section</a></li>
+				</ul>
+			</nav>
+		</div>
+	</body>
+</html>
